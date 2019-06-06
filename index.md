@@ -1,37 +1,103 @@
-## Welcome to GitHub Pages
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">
+    </head>
+    <style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+        background-color: black;
+        text-align: center;
+    }
+    #container {
+        margin: auto;
+    }
+    
+    #form {
+        margin-top: 60px;
+    }
+    
+    h2 {
+        color: #66CC33;
+    }
+    
+    .upload {
+        margin-top: 2px;
+    }
+    
+    #submit input {
+        background-color: #66CC33;
+        color: #eee;
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 16px;
+        border: none;
+        width: 120px;
+        height: 36px;
+    }
+    
+    #submit input:hover {
+        background-color: #66CC00;
+    }
+    
+    #submit input:active {
+        background-color: #669900;
+    }
+    
+    .uploadField {
+        margin-top: 2px;
+        width: 200px;
+        height: 22px;
+        font-size: 12px;
+    }
+    
+    .uploadButton {
+        background-color: #66CC33;
+        color: #eee;
+        font-weight: bold;
+        text-align: center;
+        font-size: 15px;
+        border: none;
+        width: 80px;
+        height: 26px;
+    }
+    
+    .uploadButton:hover {
+        background-color: #66CC33;
+    }
+    
+    .uploadButton:active {
+        background-color: #669900;
+    }
+    
+    </style>
+    <body>
+        <div id="container">
+            <div id="form">
+                <h2>WiFi File Upload</h2>
+                <form name="form" action="upload.html" method="post" enctype="multipart/form-data" accept-charset="utf-8" accept="video/*">
+                    <div class="upload">
+                        <input type="file" name="upload1" id="upload1" style="display:none" onChange="document.form.path1.value=this.value">
+                            <input class="uploadField" name="path1" readonly>
+                                <input class="uploadButton" type="button" value="Open" onclick="document.form.upload1.click()">
+                    </div>
+                    <div class="upload">
+                        <input type="file" name="upload2" id="upload2" style="display:none" onChange="document.form.path2.value=this.value">
+                            <input class="uploadField" name="path2" readonly>
+                                <input class="uploadButton" type="button" value="Open" onclick="document.form.upload2.click()">
+                    </div>
+                    <div class="upload">
+                        <input type="file" name="upload3" id="upload3" style="display:none" onChange="document.form.path3.value=this.value">
+                            <input class="uploadField" name="path3" readonly>
+                                <input class="uploadButton" type="button" value="Open" onclick="document.form.upload3.click()">
+                                    </div>
+                    <div id="submit"><input type="submit" value="Submit"></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
 
-You can use the [editor on GitHub](https://github.com/DogerRua/support/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/DogerRua/support/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
